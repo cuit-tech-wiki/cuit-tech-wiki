@@ -1,0 +1,32 @@
+site_name: Tech Wiki
+site_url: https://cuit-tech-wiki.github.io/cuit-tech-wiki/
+site_author: name-longming
+# Repository
+repo_name: cuit-tech-wiki/cuit-tech-wiki
+repo_url: https://github.com/cuit-tech-wiki/cuit-tech-wiki
+edit_uri: docs
+
+nav:
+  - Home: index.md
+  - 控制算法PID: Control/PID.md  
+
+theme:
+  name: null
+  custom_dir: mkdocs-material/material
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Necessary for search to work properly
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
