@@ -1,17 +1,14 @@
-# Welcome to Tech Wiki
+# 🔥** 欢迎来到3+1资料分享Wiki **
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+您可以通过 [https://github.com/cuit-tech-wiki/cuit-tech-wiki](https://github.com/cuit-tech-wiki/cuit-tech-wiki) 加入我们的Wiki资料库.
 
-## Commands
+## 联系方式
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+* `Github:` [TPO-tech-wiki](https://github.com/cuit-tech-wiki)   📚
 
-## Project layout
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## 部分项目管理
+
+* [基于HAL开发的STM32各模块库 [stm32F407]](https://github.com/cuit-tech-wiki/stm32F407)
+* [基于cubemx的STM32系列FreeRTOS+STEMWIN移植 [cubemx-FreeRTOS-emwin]](https://github.com/cuit-tech-wiki/cubemx-FreeRTOS-emwin)
+* [便携式指纹锁 [Fingerprint-Lock]](https://github.com/cuit-tech-wiki/Fingerprint-Lock)

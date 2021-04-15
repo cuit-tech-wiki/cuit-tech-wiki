@@ -1,4 +1,4 @@
-site_name: Tech Wiki
+site_name: TPO Tech Wiki
 site_url: https://cuit-tech-wiki.github.io/cuit-tech-wiki/
 site_author: name-longming
 # Repository
@@ -7,8 +7,9 @@ repo_url: https://github.com/cuit-tech-wiki/cuit-tech-wiki
 edit_uri: docs
 
 nav:
-  - Home: index.md
-  - 控制算法PID: Control/PID.md  
+  - 关于我们: index.md
+  - 控制算法: 
+      PID: Control/PID.md  
 
 theme:
   name: null
@@ -23,10 +24,34 @@ theme:
   search_index_only: true
 
   # Default values, taken from mkdocs_theme.yml
-  language: en
+  language: zh
   font:
     text: Roboto
     code: Roboto Mono
   favicon: assets/favicon.png
   icon:
     logo: logo
+
+  features:
+    - navigation.tabs
+    - navigation.top
+
+  palette:
+    
+    # Light mode
+    - blue: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
