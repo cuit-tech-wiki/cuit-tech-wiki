@@ -1,5 +1,9 @@
 ## 使用方法（超级精简版，后续完善）
 
+推荐 Git 学习地址：https://www.liaoxuefeng.com/wiki/896043488029600
+
+
+
 ①fork项目建立 git 仓库（必须要递归拉取，否则无法获得子模块）
 
 ```
@@ -36,3 +40,4 @@ git push origin master
 
 
 将要添加至 Wiki 的 Markdown 文件保存至  **docs** 下的文件夹中，然后修改 `mkdocs.yml` 中的 **nav** 属性
+
