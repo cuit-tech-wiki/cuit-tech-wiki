@@ -2,7 +2,6 @@
 
 [位置式PID与增量式PID区别浅析_Z小旋-CSDN博客_增量式pid](https://blog.csdn.net/as480133937/article/details/89508034?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_baidulandingword-0&spm=1001.2101.3001.4242)
 
-https://zhuanlan.zhihu.com/p/38337248
 
 ![img](https://pic1.zhimg.com/80/v2-b85eab56a6ed424b5e1f0b87a7cca588_720w.jpg?source=1940ef5c)
 
@@ -113,10 +112,6 @@ https://zhuanlan.zhihu.com/p/38337248
 
   [PID的TRICK(一)简述五种PID积分抗饱和（ANTI-Windup）方法 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/49572763)
 
-  ![image-20210324095247623](C:\Users\17562\AppData\Roaming\Typora\typora-user-images\image-20210324095247623.png)
-
-  ![image-20210322172726633](C:\Users\17562\AppData\Roaming\Typora\typora-user-images\image-20210322172726633.png)
-
 
 
 系统对于积分项的要求是，系统偏差大时，积分作用应该减弱甚至是全无，而在偏差小时，则应该加强。积分系数取大了会产生超调，甚至积分饱和，取小了又不能短时间内消除静差。因此，根据系统的偏差大小改变积分速度是有必要的。 变积分PID的基本思想是设法改变积分项的累加速度，使其与偏差大小相对应：偏差越大，积分越慢; 偏差越小，积分越快。
@@ -153,7 +148,6 @@ https://zhuanlan.zhihu.com/p/38337248
 
 带死区的PID控制算法就是检测偏差值，若是偏差值达到一定程度，就进行调节。若是偏差值较小，就认为没有偏差。用公式表示如下：
 
-![img](https://img-blog.csdn.net/20180622211701288?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ZveGNsZXZlcg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 其中的死区值得选择需要根据具体对象认真考虑，因为该值太小就起不到作用，该值选取过大则可能造成大滞后。
 
@@ -168,14 +162,6 @@ https://zhuanlan.zhihu.com/p/38337248
 
 
 ### **⑤串级PID**	
-
-https://cloud.tencent.com/developer/news/464094
-
-https://www.huaweicloud.com/articles/e2ecb27231e2b71bf5cf217378013bad.html
-
-https://www.zhihu.com/question/293450508
-
-https://cloud.tencent.com/developer/news/464094
 
 类比于小车上坡，因为单环PID输出的速度 V 不一定是真实的速度 V，所以内环再加上速度环PID，构成串级PID（外环为位置环，输出的值是小车的理论速度，内环为速度环，输入是小车的理论速度，希望尽可能的使输出为理论速度），外环的输出是内环的输入
 
