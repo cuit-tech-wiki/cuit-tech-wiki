@@ -11,14 +11,14 @@
         <meta name="author" content="name-longming">
       
       
-        <link rel="canonical" href="https://cuit-tech-wiki.github.io/cuit-tech-wiki/Matlab/Matlab%281%29/">
+        <link rel="canonical" href="https://cuit-tech-wiki.github.io/cuit-tech-wiki/Filter/Filter/">
       
       <link rel="icon" href="../../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.1">
     
     
       
-        <title>Matlab使用与安装 - TPO Tech Wiki</title>
+        <title>卡尔曼滤波 - TPO Tech Wiki</title>
       
     
     
@@ -66,6 +66,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -92,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Matlab使用与安装
+              卡尔曼滤波
             
           </span>
         </div>
@@ -219,6 +224,22 @@
   
     <li class="md-tabs__item">
       <a href="./" class="md-tabs__link md-tabs__link--active">
+        滤波算法
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Matlab/Matlab/" class="md-tabs__link">
         数学建模
       </a>
     </li>
@@ -358,13 +379,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       <label class="md-nav__link" for="__nav_3">
-        数学建模
+        滤波算法
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="数学建模" data-md-level="1">
+      <nav class="md-nav" aria-label="滤波算法" data-md-level="1">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
-          数学建模
+          滤波算法
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -379,9 +400,85 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          卡尔曼滤波
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
-        Matlab使用与安装
+        卡尔曼滤波
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    卡尔曼滤波简介
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    为什么要使用卡尔曼滤波
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    状态观察器
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    最佳状态估计器
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    最佳状态估计器算法
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    非线性状态估计器
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simulink" class="md-nav__link">
+    如何在Simulink中使用卡尔曼滤波器
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simulink_1" class="md-nav__link">
+    如何在Simulink中使用扩展卡尔曼滤波器
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -407,11 +504,53 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       <label class="md-nav__link" for="__nav_4">
+        数学建模
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="数学建模" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          数学建模
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Matlab/Matlab/" class="md-nav__link">
+        Matlab使用与安装
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
         硬件设计
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="硬件设计" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
+        <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           硬件设计
         </label>
@@ -442,19 +581,112 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    卡尔曼滤波简介
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    为什么要使用卡尔曼滤波
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    状态观察器
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    最佳状态估计器
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    最佳状态估计器算法
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    非线性状态估计器
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simulink" class="md-nav__link">
+    如何在Simulink中使用卡尔曼滤波器
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simulink_1" class="md-nav__link">
+    如何在Simulink中使用扩展卡尔曼滤波器
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/cuit-tech-wiki/cuit-tech-wiki/docs/Matlab/Matlab(1).md" title="编辑此页" class="md-content__button md-icon">
+                  <a href="https://github.com/cuit-tech-wiki/cuit-tech-wiki/docs/Filter/Filter.md" title="编辑此页" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Matlab使用与安装</h1>
+                  <h1>卡尔曼滤波</h1>
                 
-                
+                <h2 id="_1">卡尔曼滤波简介</h2>
+<p>卡尔曼滤波器的作用是：通过输入不同的多种数据，融合出一个最佳的数据</p>
+<h2 id="_2">为什么要使用卡尔曼滤波</h2>
+<p><a href="https://www.youtube.com/watch?v=mwn8xhgNpFY">https://www.youtube.com/watch?v=mwn8xhgNpFY</a></p>
+<h2 id="_3">状态观察器</h2>
+<p><a href="https://www.youtube.com/watch?v=4OerJmPpkRg">https://www.youtube.com/watch?v=4OerJmPpkRg</a></p>
+<h2 id="_4">最佳状态估计器</h2>
+<p><a href="https://www.youtube.com/watch?v=ul3u2yLPwU0">https://www.youtube.com/watch?v=ul3u2yLPwU0</a></p>
+<h2 id="_5">最佳状态估计器算法</h2>
+<p><a href="https://www.youtube.com/watch?v=VFXf1lIZ3p8">https://www.youtube.com/watch?v=VFXf1lIZ3p8</a></p>
+<h2 id="_6">非线性状态估计器</h2>
+<p><a href="https://www.youtube.com/watch?v=Vefia3JMeHE">https://www.youtube.com/watch?v=Vefia3JMeHE</a></p>
+<h2 id="simulink">如何在Simulink中使用卡尔曼滤波器</h2>
+<p><a href="https://www.youtube.com/watch?v=ouRM4sgoVs8">https://www.youtube.com/watch?v=ouRM4sgoVs8</a></p>
+<h2 id="simulink_1">如何在Simulink中使用扩展卡尔曼滤波器</h2>
+<p><a href="https://www.youtube.com/watch?v=bCsOdnADuAM">https://www.youtube.com/watch?v=bCsOdnADuAM</a></p>
                 
               
               
@@ -492,13 +724,13 @@
         </a>
       
       
-        <a href="../../Hardware/AD20/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../../Matlab/Matlab/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 下一页
               </span>
-              Altium Designer使用与安装
+              Matlab使用与安装
             </div>
           </div>
           <div class="md-footer__button md-icon">
