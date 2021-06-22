@@ -12,10 +12,13 @@ nav:
       PID算法及优化: Control/PID.md  
   - 滤波算法:
       卡尔曼滤波: Filter/Filter.md
+      互补滤波: Filter/HubFilter.md
   - 数学建模:
       Matlab使用与安装: Matlab/Matlab.md
   - 硬件设计:
       Altium Designer使用与安装: Hardware/AD20.md
+  - 3+1人物简介:
+      衡水高材生: Person/number1.md
       
 theme:
   name: null
