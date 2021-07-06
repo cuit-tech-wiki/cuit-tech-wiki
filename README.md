@@ -2,6 +2,8 @@
 
 推荐 Git 学习地址：https://www.liaoxuefeng.com/wiki/896043488029600
 
+Bilibili视频讲解地址：https://www.bilibili.com/video/BV1Fg41137qG/
+
 
 
 ①fork项目建立 git 仓库（必须要递归拉取，否则无法获得子模块）
